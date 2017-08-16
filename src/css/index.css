@@ -5,20 +5,26 @@
     height: 5rem;
 }
 .serviceImage{
-   width:5rem;
+   width:50px;
    height:auto;
-   margin-top: 1rem;
+   margin-top:41px;
 }
   .Titlee{
-font-family: Helvetica Neue;
-font-size:1.4rem;
-width: auto;
-text-align: center;
-color: #1d90e6
+    /* width: 69px; */
+    /* height: 16px; */
+    font-family: FZZZHONGJW-GB1-0;
+    font-size: 16.7px;
+    /* line-height: 3.6; */
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: #00aeef;
+    margin-top: 28px;
   }
+
   .buttonPic{
-    width: 6rem;
-    height: auto
+    width:89px;
+    height: 25px;
+    margin-top:20px;
   }
   .buttonBottom{
    clear: both;
@@ -29,15 +35,16 @@ color: #1d90e6
 .serviceTitle{
   line-height: 4rem;
   height: 4rem;
-  font-size:1.5rem;
+  font-size:2rem;
 }
   .TitleeChange{
-
-font-family: Helvetica Neue;
-font-size:1rem;
-width: auto;
-text-align: center;
-color: #ffffff  
+    font-family: FZZZHONGJW-GB1-0;
+    font-size: 16.7px;
+    /* line-height: 3.6; */
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: #fff;
+    margin-top: 28px; 
   }
   .NumberChange{
     /* font-size: 3.26rem; */
@@ -76,14 +83,26 @@ color: #ffffff
     /* width: auto; */
     /* text-align: left; */
     width: 143px;
-    height:33px;
+    height: 33px;
     font-family: FZZZHONGJW-GB1-0;
     font-size: 1.6rem;
     line-height: 1.13;
     letter-spacing: 0.8px;
     text-align: left;
-    color:#ffffff;
+    color:#fff;
     float: right;
+    
+  }
+  .titleChange2{
+     /* width: 69px; */
+    /* height: 16px; */
+    font-family: FZZZHONGJW-GB1-0;
+    font-size: 16.7px;
+    /* line-height: 3.6; */
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: #fff;
+    margin-top: 28px;   
   }
   .Number{
     /* font-size: 3.26rem; */
@@ -141,14 +160,21 @@ color: #ffffff
     height: 5rem;
 }
 .serviceImage{
-   width:7rem;
+   width:50px;
    height:auto;
-   margin-top: 1rem;
+   margin-top:41px;
 }
+  .buttonmove{
+    position: relative;
+    bottom:1rem;
+  }
   .descriptionBottom{
     height: 9rem;
   }
   .titles{
+    /* font-family: "Helvetica Neue"; */
+    /* width: auto; */
+    /* text-align: left; */
     width: 143px;
     height: 33px;
     font-family: FZZZHONGJW-GB1-0;
@@ -160,6 +186,9 @@ color: #ffffff
     float: right;
   }
   .titleChange{
+    /* font-family: "Helvetica Neue"; */
+    /* width: auto; */
+    /* text-align: left; */
     width: 143px;
     height:33px;
     font-family: FZZZHONGJW-GB1-0;
@@ -171,11 +200,15 @@ color: #ffffff
     float: right;
   }
   .Titlee{
-font-family: Helvetica Neue;
-font-size:2rem;
-width: auto;
-text-align: center;
-color: #1d90e6
+    /* width: 69px; */
+    /* height: 16px; */
+    font-family: FZZZHONGJW-GB1-0;
+    font-size: 16.7px;
+    /* line-height: 3.6; */
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: #00aeef;
+    margin-top: 28px;
   }
   .titles{
     color: #0099cc
@@ -184,8 +217,9 @@ color: #1d90e6
     color: #ffffff
   }
   .buttonPic{
-    width:8rem;
-    height: auto
+    width:89px;
+    height: 25px;
+    margin-top:20px;
   }
   .buttonBottom{
    clear: both;
@@ -200,25 +234,62 @@ color: #1d90e6
   font-size:2rem;
 }
   .TitleeChange{
-font-family: Helvetica Neue;
-font-size:2rem;
-width: auto;
-text-align: center;
-color: #ffffff  
+    /* width: 69px; */
+    /* height: 16px; */
+    font-family: FZZZHONGJW-GB1-0;
+    font-size: 16.7px;
+    /* line-height: 3.6; */
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: #fff;
+    margin-top: 28px;
+  }
+  .titleChange2{
+     /* width: 69px; */
+    /* height: 16px; */
+    font-family: FZZZHONGJW-GB1-0;
+    font-size: 16.7px;
+    /* line-height: 3.6; */
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: #fff;
+    margin-top: 28px;   
   }
   .NumberChange{
-      font-size: 3rem;
-      color: #ffffff;
-      top: -0.6rem;
+    /* font-size: 3.26rem; */
+    width: 3.5rem;
+    height: 5rem;
+    /* line-height: 5rem; */
+    font-family: CTBiaoSongSJ;
+    font-size: 3.26rem;
+    /* line-height: 3.6; */
+    /* letter-spacing: 1.6px; */
+    /* text-align: left; */
+    color: #fff;
+    /* margin: 0; */
+    float: left;
+    /* position: relative; */
+    display: inline;
+    position: relative;
+    top: -0.6rem;
   }
   .Number{
-  font-family: CTBiaoSongSJ;
-  font-size: 3.26rem;
-  line-height: 3.6;
-  letter-spacing: 0.16rem;
-  text-align: left;
-  color: #999999;
-  top: -0.6rem;
+    /* font-size: 3.26rem; */
+    width: 3.5rem;
+    height: 5rem;
+    /* line-height: 5rem; */
+    font-family: CTBiaoSongSJ;
+    font-size: 3.26rem;
+    /* line-height: 3.6; */
+    /* letter-spacing: 1.6px; */
+    /* text-align: left; */
+    color: #999999;
+    /* margin: 0; */
+    float: left;
+    /* position: relative; */
+    display: inline;
+    position: relative;
+    top: -0.6rem;
   }
   .description{
   width: 176px;
@@ -261,7 +332,9 @@ color: #ffffff
   }
   .colorChange{
      background-color:#42a4fc;
-
+  }
+  .aaa{
+    background-color: #fff
   }
   .moveChange{
      -webkit-transform: translateY(-1rem);
@@ -286,10 +359,9 @@ color: #ffffff
   }
   .pagebottom{
     width: 100%;
-    padding:2rem;
     box-sizing: border-box;
-    background-color: black;
-    height: 12rem;
+    background-color: #333333;
+    height: 157px;
   }
   .grey {
     display: inline-block;
@@ -356,20 +428,20 @@ color: #ffffff
   
   .title5 {
     width: 100%;
-    height: auto;
-    margin-top: 3rem;
+    height: 100%;
+    margin-top: 4.7rem;
   }
   
   .title6 {
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-bottom: 2rem;
   }
   .title7{
     width: 100%;
-    height: auto;
-    margin-bottom: 2rem;
-    margin-top: 2rem    
+    height:100%;
+    margin-bottom:41px;
+    margin-top: 51px;   
   }
   .bannerMore {
     width: 53.4rem;
@@ -400,13 +472,13 @@ color: #ffffff
     height: auto;
     background-image: url('../assets/p21.png');
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 100% 100%;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     /* Firefox */
     -webkit-box-sizing: border-box;
     /* Safari */
-    padding-top: 4rem;
+    padding-top:33px;
     clear: both;
     background-color: #f9fafc
   }
@@ -468,11 +540,11 @@ color: #ffffff
     position: relative;
     width: 6.3rem;
     height:5.3rem;
-  font-family: FZLTZHK-GBK1-0;
-  font-size: 1.4rem;
-  letter-spacing: 0.04rem;
-  color: #333333;
-  line-height: 5.0rem;
+    font-family: FZLTZHK-GBK1-0;
+    font-size: 1.4rem;
+    letter-spacing: 0.04rem;
+    color: #333333;
+    line-height: 5.0rem;
   }
   .p12 {
     width: 865px;

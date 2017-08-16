@@ -36,11 +36,11 @@
       </div>
       <img src="../assets/title3.png" class="title3">
       <div class="example">
-        <el-row :gutter="20" type="flex" class="row-bg" justify="center" style="margin-right: 0;margin-left: 0">
-          <el-col :span="4" v-for="(bottleneck,index) in playerNeck1"  @mouseover.native="mouseonn(index)" @mouseout.native="mouseoutt(index)" style="width: 19.9rem;height: 33.7rem;">
+        <el-row :gutter="20" type="flex" class="row-bg" justify="center" style="margin-right: 0;margin-left: 0;padding: 0">
+          <el-col :span="4" v-for="(bottleneck,index) in playerNeck1"  @mouseover.native="mouseonn(index)" @mouseout.native="mouseoutt(index)" style="width: 19.9rem;height:28.5rem;">
             <div :body-style="{ padding: '0px' }" style="height: auto;background-color: #fff" v-bind:class="{moveChange: activeName2 == index-4}">
               <img :src="activePic2[index].show?bottleneck.pic:bottleneck.picc" class="image">
-              <div v-bind:class="{colorChange: activeName2 == index-4}" style="height:20.4rem;margin-top:-0.5rem">
+              <div v-bind:class="{colorChange: activeName2 == index-4}" style="height:15.2rem;margin-top:-0.5rem">
               <div class="cardBox">
                     <h4 v-bind:class="{Number:activeName2 != index-4,NumberChange:activeName2 == index-4}">{{bottleneck.No}}</h4>
                     <h4 v-bind:class="{titles:activeName2 != index-4,titleChange:activeName2 == index-4}">{{bottleneck.title}}</h4>
@@ -52,11 +52,11 @@
             </div>
           </el-col>
         </el-row>
-        <el-row :gutter="20" type="flex" class="row-bg" justify="center" style="margin-right: 0;margin-left: 0">
-          <el-col :span="4" v-for="(bottleneck,index) in playerNeck2"  @mouseover.native="mouseOn(index)" @mouseout.native="mouseOut(index)" style="width: 19.9rem;height: 33.7rem;">
-            <el-card :body-style="{ padding: '0px' }" style="height: auto;background-color: #fff" v-show="bottleneck.opacity"  v-bind:class="{moveChange: activeName2 == index+4}">
+        <el-row :gutter="20" type="flex" class="row-bg" justify="center" style="margin-right: 0;margin-left: 0;margin: 0">
+          <el-col :span="4" v-for="(bottleneck,index) in playerNeck2"  @mouseover.native="mouseOn(index)" @mouseout.native="mouseOut(index)" style="width: 19.9rem;height:28.5rem;">
+            <div :body-style="{ padding: '0px' }" style="height: auto;background-color: #fff" v-show="bottleneck.opacity"  v-bind:class="{moveChange: activeName2 == index+4}">
               <img :src="activePic3[index].show?bottleneck.pic:bottleneck.picc" class="image">
-              <div v-bind:class="{colorChange: activeName2 == index+4}" style="height:20.4rem;margin-top:-0.5rem">
+              <div v-bind:class="{colorChange: activeName2 == index+4}" style="height:15.2rem;margin-top:-0.5rem">
               <div class="cardBox">
                     <h4 v-bind:class="{Number:activeName2 != index+4,NumberChange:activeName2 == index+4}">{{bottleneck.No}}</h4>
                     <h4 v-bind:class="{titles:activeName2 != index+4,titleChange:activeName2 == index+4}">{{bottleneck.title}}</h4>
@@ -65,7 +65,7 @@
                 <h4 v-bind:class="{description:activeName2 != index+4,descriptionChange:activeName2 == index+4}">{{bottleneck.content}}</h4>
               </div>
               </div>
-            </el-card>
+            </div>
           </el-col>
         </el-row>
       </div>
@@ -76,21 +76,15 @@
     </div>
     <div class="service">
       <img src="../assets/title5.png" class="title5">
-      <el-row :gutter="20" type="flex" class="row-bg" justify="center" style="margin-right: 0;margin-left: 0;padding-bottom: 3.5rem">
-        <el-col :span="3" v-for="(bottleneck,index) in service" @mouseover.native="mouseOnn(index)" @mouseout.native="mouseOutt(index)">
-          <el-card :body-style="{ padding: '0px' }" style="height: auto" v-bind:class="{moveChange: activeName2 == index+8,colorChange: activeName2 == index+8}">
+      <el-row :gutter="20" type="flex" class="row-bg" justify="center" style="margin-right: 0;margin-left: 0;padding-bottom: 5.9rem">
+        <el-col :span="3" v-for="(bottleneck,index) in service" @mouseover.native="mouseOnn(index)" @mouseout.native="mouseOutt(index)"  style="width: 12.8rem;height:206px;background-color: #fff;padding:0;margin-left:10px;margin-right: 10px" v-bind:class="{moveChange: activeName2 == index+8}">
+          <div :body-style="{ padding: '0px' }" style="width: 12.8rem;height:206px;" v-bind:class="{colorChange: activeName2 == index+8}">
             <img :src="activePic4[index].show?bottleneck.pic:bottleneck.picc" class="serviceImage" >
             <div style="height: auto;">
-            <div>
-              <el-row :gutter="1" class="serviceTitle">
-                <h5 v-bind:class="{Titlee:activeName2 != index+4,titleChange:activeName2 == index+8}">{{bottleneck.title}}</h5>
-              </el-row>
-            </div>
-            <div class="bottom clearfix buttonBottom">
+              <h5 v-bind:class="{Titlee:activeName2 != index+8,titleChange2:activeName2 == index+8}">{{bottleneck.title}}</h5>
               <img :src="activePic4[index].show?button1:button2" class="buttonPic">
             </div>
-            </div>
-          </el-card>
+          </div>
         </el-col>
       </el-row>
     </div>
@@ -109,32 +103,39 @@
     </div>
     <div class="MerchantAlliance">
       <img src="../assets/title7.png" class="title7">
-       <el-row :gutter="20" type="flex" class="row-bg" justify="center" style="margin-right: 0;margin-left: 0;padding-bottom: 3.5rem;height: 13rem">
-        <el-col :span="6">
+       <el-row :gutter="20" type="flex" class="row-bg" justify="center" style="margin-right: 0;margin-left: 0;height: 80px;margin: 0;padding:0">
+        <el-col :span="6" style="width: 222px;height: 80px;">
             <img src="../assets/27.png">
         </el-col>
-        <el-col :span="8">
+        <el-col :span="8" style="width: 307px;height: 80px;">
             <img src="../assets/p24.png">
         </el-col>
-        <el-col :span="6">
+        <el-col :span="6" style="width: 222px;height: 80px;">
             <img src="../assets/26.png">
         </el-col>
       </el-row>
-       <el-row :gutter="20" type="flex" class="row-bg" justify="center" style="margin-right: 0;margin-left: 0;padding-bottom: 3.5rem;height: 13rem">
+       <el-row :gutter="20" type="flex" class="row-bg" justify="center" style="    margin-left: 0px;margin-right: 0px;margin-top: 8px;padding-bottom: 77px;">
         <el-col :span="6">
-            <img src="../assets/25.png">
+            <img src="../assets/25.png" style="width: 224px;height: 80px;">
         </el-col>
 
         <el-col :span="6">
-            <img src="../assets/28.png">
+            <img src="../assets/28.png" style="width: 220px;height: 80px;">
         </el-col>
       </el-row>
       </div>
     <div class="pagebottom">
       <div style="width:70%;height:auto;margin:0 auto;position:relative;">
        <img src="../assets/m.png" class="bussinessLogo" style="width: 10rem;height: auto;float: left;">
-       <p style="float: left;display: inline-block;color: white;width:60%">首页&nbsp&nbsp|&nbsp&nbsp产品&nbsp&nbsp|&nbsp&nbsp案例&nbsp&nbsp|&nbsp&nbsp商务方式&nbsp&nbsp|&nbsp&nbsp关于我们&nbsp&nbsp|&nbsp&nbsp加入我们</br></br>广州好酷科技有限公司&nbsp&nbsp联系电话：020-39106900&nbsp&nbsp联系地址：广州番禺区番禺大道北555号番禺节能科技园创新大厦618&nbsp&nbsp展厅地址：广州番禺迎新东路星力动漫游戏产业园J128&nbsp&nbsp版权所有：Copyright@好酷科技&nbsp&nbsp粤ICP备16091001号-1</p>
+       <div style="width: 520px;height: auto;float: left;position: absolute;left: 417px;margin-top: 36px">
+       <div style="width: 325px;height: 13px ;font-family: FZLTXHK-GBK1-0;font-size: 12px;line-height: 1.5;letter-spacing: 0.3px;text-align: left;color: #ffffff">首页&nbsp&nbsp|&nbsp&nbsp产品&nbsp&nbsp|&nbsp&nbsp案例&nbsp&nbsp|&nbsp&nbsp商务方式&nbsp&nbsp|&nbsp&nbsp关于我们&nbsp&nbsp|&nbsp&nbsp加入我们</div>
+       <p style="width: 514px;height: 49px;  width: 514px;height: 49px;font-family: FZLTXHK-GBK1-0;font-size: 12px;line-height: 1.5;letter-spacing: 0.3px;text-align: left;color: #ababab;margin-top: 10px">广州好酷科技有限公司&nbsp&nbsp联系电话：020-39106900&nbsp&nbsp联系地址：广州番禺区番禺大道北555号番禺节能科技园创新大厦618&nbsp&nbsp展厅地址：广州番禺迎新东路星力动漫游戏产业园J128&nbsp&nbsp版权所有：Copyright@好酷科技&nbsp&nbsp粤ICP备16091001号-1
+       </p>
+       </div>
+       <div style="width:82px;height: 101px;float: left;position: absolute;left: 971px;margin-top: 26px">
        <img src="../assets/n.png" class="Code" style="width: 7rem;height:auto;float: right;">
+       <div style="width:82px;height: 11px;font-family: FZLTXHK-GBK1-0;font-size: 12px;line-height: 1.5;letter-spacing: 0.3px;text-align:center;color: #ffffff;position: relative;top: 8px;">微信公众号</div>
+       </div>
        </div>
     </div>
   </div>
@@ -358,6 +359,9 @@
     methods: {
      navMenu(index){
       this.activeName1=index;
+      if(index==5){
+        this.$router.push("/join") 
+      }
      },
      mouseon(index){
       this.activePic[index].show=false;
