@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Hello from '@/components/Hello'
 import Join from '@/components/join'
 import JobsDetails from '@/components/JobsDetails'
+import product from '@/components/product'
 
 Vue.use(Router)
 
@@ -16,6 +17,10 @@ export default new Router({
     {
       path:'/join',
       component:Join,
+    },
+    {
+      path:'/product',
+      component:product,
     },
     {
       path:'/JobsDetails',
