@@ -28,8 +28,8 @@
         </el-row>
       </div>
       <div class="searchContent">
-        <input autocomplete="off" placeholder="请输入内容" type="text" rows="2" validateevent="true" class="el-input__inner" style="border: 1px solid #fff;width: 268px;height: 40px;border-radius: 0;position: absolute;left: 13px;top: 21px;">
-        <img src="../assets/searchButton.png" class="searchImg">
+        <input autocomplete="off" placeholder="请输入内容" type="text" rows="2" validateevent="true" class="el-input__inner" style="border: 1px solid #fff;width: 268px;height: 40px;border-radius: 0;position: absolute;left: 13px;top: 21px;" v-model="searchContent">
+        <img src="../assets/searchButton.png" class="searchImg" @click="search">
         <img src="../assets/ho-t.png" class="searchHot">
         <p class="hotContent">热招岗位：Java高级工程师&nbsp&nbsp商务经理&nbsp&nbsp运维员</p>
       </div>
@@ -44,14 +44,14 @@
       </div>
     </div>
     <div class="pagebottom">
-      <div style="width:70%;height:auto;margin:0 auto;position:relative;">
+      <div style="width:832px;height:auto;margin:0 auto;position:relative;">
        <img src="../assets/m.png" class="bussinessLogo" style="width: 10rem;height: auto;float: left;">
-       <div style="width: 520px;height: auto;float: left;position: absolute;left: 417px;margin-top: 36px">
+       <div style="width: 520px;height: auto;float: left;position: absolute;left:196px;margin-top: 36px">
        <div style="width: 325px;height: 13px ;font-family: FZLTXHK-GBK1-0;font-size: 12px;line-height: 1.5;letter-spacing: 0.3px;text-align: left;color: #ffffff">首页&nbsp&nbsp|&nbsp&nbsp产品&nbsp&nbsp|&nbsp&nbsp案例&nbsp&nbsp|&nbsp&nbsp商务方式&nbsp&nbsp|&nbsp&nbsp关于我们&nbsp&nbsp|&nbsp&nbsp加入我们</div>
        <p style="width: 514px;height: 49px;  width: 514px;height: 49px;font-family: FZLTXHK-GBK1-0;font-size: 12px;line-height: 1.5;letter-spacing: 0.3px;text-align: left;color: #ababab;margin-top: 10px">广州好酷科技有限公司&nbsp&nbsp联系电话：020-39106900&nbsp&nbsp联系地址：广州番禺区番禺大道北555号番禺节能科技园创新大厦618&nbsp&nbsp展厅地址：广州番禺迎新东路星力动漫游戏产业园J128&nbsp&nbsp版权所有：Copyright@好酷科技&nbsp&nbsp粤ICP备16091001号-1
        </p>
        </div>
-       <div style="width:82px;height: 101px;float: left;position: absolute;left: 971px;margin-top: 26px">
+       <div style="width:82px;height: 101px;float: left;position: absolute;left:760px;margin-top: 26px">
        <img src="../assets/n.png" class="Code" style="width: 7rem;height:auto;float: right;">
        <div style="width:82px;height: 11px;font-family: FZLTXHK-GBK1-0;font-size: 12px;line-height: 1.5;letter-spacing: 0.3px;text-align:center;color: #ffffff;position: relative;top: 8px;">微信公众号</div>
        </div>
@@ -150,13 +150,24 @@ import button3 from "../assets/Moreclick.png"
           name:'Java中级开发工程师',
           button:button1,
           color:true,
-        }]
+        }],
+        searchContent:'',
+        Jobbb:[],
 
       }
+    },
+    created(){
+        this.fuzhi();
     },
     methods: {
      navMenu(index){
       this.activeName1=index;
+      if(index==5){
+        this.$router.push("/join") 
+      }
+      if(index==1){
+        this.$router.push("/product") 
+      }
      },
      mouseOn:function(index){
        this.Jobs[index].button = button2;
@@ -166,6 +177,23 @@ import button3 from "../assets/Moreclick.png"
      },
      onclick(index){
        this.Jobs[index].button = button3;
+     },
+     fuzhi(){
+       this.Jobbb = this.Jobs;
+     },
+     search(){
+       this.Jobs=[];
+       console.log(this.searchContent);
+       for(let i=0;i<this.Jobbb.length;i++){
+          for(let a=0;a<this.Jobbb[i].name.length;a++){
+            for(let m=a;m<this.Jobbb[i].name.length;m++){
+                  if(this.searchContent==this.Jobbb[i].name.slice(a,m+1)){
+                  console.log(this.Jobbb[i]);
+                  this.Jobs.push(this.Jobbb[i]);
+                  }
+            }
+          }
+       }
      }
     }
   }

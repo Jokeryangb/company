@@ -13,14 +13,19 @@
       <img src="../assets/bannerMore.png" class="bannerMore">
     </div>
     <div class="bottleNeck">
-      <img src="../assets/title1.png" class="title1">
+      <div style="width: 100%;height: 50px;position: relative;">
+          <h4 class="titleC">行业痛点</h4>
+          <p class="titleEnglish">Bottleneck Of The Industry</p>
+          <div class="blueLine"></div>
+          <div class="greyLine"></div>
+      </div>
       <img src="../assets/title2.png" class="title2">
       <div class="example">
         <el-row :gutter="20" type="flex" class="row-bg" justify="center" style="margin-right: 0;margin-left: 0">
           <el-col :span="4" v-for="(bottleneck,index) in bottleNeck" @mouseover.native="mouseon(index)" @mouseout.native="mouseout(index)" style="width: 19.9rem;
     height: 33.7rem;">
             <div :body-style="{ padding: '0px' }" style="height: auto;background-color: #fff" v-bind:class="{moveChange: activeName2 == index}">
-              <img :src="activePic[index].show?bottleneck.pic:bottleneck.picc" class="image">
+              <img :src="activePic[index].show?bottleneck.pic:bottleneck.picc" class="image" style="width: 100%">
               <div v-bind:class="{colorChange: activeName2 == index}" style="height:20.4rem;margin-top:-0.5rem">
               <div class="cardBox">
                     <h4 v-bind:class="{Number:activeName2 != index,NumberChange:activeName2 == index}">{{bottleneck.No}}</h4>
@@ -39,7 +44,7 @@
         <el-row :gutter="20" type="flex" class="row-bg" justify="center" style="margin-right: 0;margin-left: 0;padding: 0">
           <el-col :span="4" v-for="(bottleneck,index) in playerNeck1"  @mouseover.native="mouseonn(index)" @mouseout.native="mouseoutt(index)" style="width: 19.9rem;height:28.5rem;">
             <div :body-style="{ padding: '0px' }" style="height: auto;background-color: #fff" v-bind:class="{moveChange: activeName2 == index-4}">
-              <img :src="activePic2[index].show?bottleneck.pic:bottleneck.picc" class="image">
+              <img :src="activePic2[index].show?bottleneck.pic:bottleneck.picc" class="image" style="width: 100%">
               <div v-bind:class="{colorChange: activeName2 == index-4}" style="height:15.2rem;margin-top:-0.5rem">
               <div class="cardBox">
                     <h4 v-bind:class="{Number:activeName2 != index-4,NumberChange:activeName2 == index-4}">{{bottleneck.No}}</h4>
@@ -55,7 +60,7 @@
         <el-row :gutter="20" type="flex" class="row-bg" justify="center" style="margin-right: 0;margin-left: 0;margin: 0">
           <el-col :span="4" v-for="(bottleneck,index) in playerNeck2"  @mouseover.native="mouseOn(index)" @mouseout.native="mouseOut(index)" style="width: 19.9rem;height:28.5rem;">
             <div :body-style="{ padding: '0px' }" style="height: auto;background-color: #fff" v-show="bottleneck.opacity"  v-bind:class="{moveChange: activeName2 == index+4}">
-              <img :src="activePic3[index].show?bottleneck.pic:bottleneck.picc" class="image">
+              <img :src="activePic3[index].show?bottleneck.pic:bottleneck.picc" class="image" style="width: 100%">
               <div v-bind:class="{colorChange: activeName2 == index+4}" style="height:15.2rem;margin-top:-0.5rem">
               <div class="cardBox">
                     <h4 v-bind:class="{Number:activeName2 != index+4,NumberChange:activeName2 == index+4}">{{bottleneck.No}}</h4>
@@ -90,12 +95,12 @@
     </div>
     <div class="cooperationExa">
       <img src="../assets/title6.png" class="title6">
-      <div>
+      <div class="swiper-container">
         <img src="../assets/left.png" class="leftPic">
-        <div class="bannerPicture">
-          <div style="width:">
+        <div class="bannerPicture swiper-wrapper">
+          <div class="swiper-slide">
           <img src="../assets/p23.jpg" style="width: 100%;height: auto;">
-          <div class="grey"><p style="opacity:1;color:white;font-size:12px;text-align: left;width:80%;float:left">1、客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包，只要带上手机即可客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包，只要带上手机即可客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包，只要带上手机即可客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包，只要带上手机即可客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包，只要带上手机即可客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包，只要带上手机即可客人无需在考虑没带会员卡能否去游乐园游乐厅玩</p><img src="../assets/button3.png" style="float: right;width: 15%;height: auto;opacity: 1;position:relative;top:3rem;"></div>
+          <div class="grey"><p>1、客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包，只要带上手机即可客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包，只要带上手机即可客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包，只要带上手机即可客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包</p><img src="../assets/button3.png"></div>
           </div>
         </div>
         <img src="../assets/right.png" class="rightPic">
@@ -125,14 +130,14 @@
       </el-row>
       </div>
     <div class="pagebottom">
-      <div style="width:70%;height:auto;margin:0 auto;position:relative;">
+      <div style="width:832px;height:auto;margin:0 auto;position:relative;">
        <img src="../assets/m.png" class="bussinessLogo" style="width: 10rem;height: auto;float: left;">
-       <div style="width: 520px;height: auto;float: left;position: absolute;left: 417px;margin-top: 36px">
+       <div style="width: 520px;height: auto;float: left;position: absolute;left:196px;margin-top: 36px">
        <div style="width: 325px;height: 13px ;font-family: FZLTXHK-GBK1-0;font-size: 12px;line-height: 1.5;letter-spacing: 0.3px;text-align: left;color: #ffffff">首页&nbsp&nbsp|&nbsp&nbsp产品&nbsp&nbsp|&nbsp&nbsp案例&nbsp&nbsp|&nbsp&nbsp商务方式&nbsp&nbsp|&nbsp&nbsp关于我们&nbsp&nbsp|&nbsp&nbsp加入我们</div>
        <p style="width: 514px;height: 49px;  width: 514px;height: 49px;font-family: FZLTXHK-GBK1-0;font-size: 12px;line-height: 1.5;letter-spacing: 0.3px;text-align: left;color: #ababab;margin-top: 10px">广州好酷科技有限公司&nbsp&nbsp联系电话：020-39106900&nbsp&nbsp联系地址：广州番禺区番禺大道北555号番禺节能科技园创新大厦618&nbsp&nbsp展厅地址：广州番禺迎新东路星力动漫游戏产业园J128&nbsp&nbsp版权所有：Copyright@好酷科技&nbsp&nbsp粤ICP备16091001号-1
        </p>
        </div>
-       <div style="width:82px;height: 101px;float: left;position: absolute;left: 971px;margin-top: 26px">
+       <div style="width:82px;height: 101px;float: left;position: absolute;left:760px;margin-top: 26px">
        <img src="../assets/n.png" class="Code" style="width: 7rem;height:auto;float: right;">
        <div style="width:82px;height: 11px;font-family: FZLTXHK-GBK1-0;font-size: 12px;line-height: 1.5;letter-spacing: 0.3px;text-align:center;color: #ffffff;position: relative;top: 8px;">微信公众号</div>
        </div>
@@ -142,6 +147,7 @@
 </template>
 
 <script>
+import Swiper from '../js/swiper.min.js';
   import pic1 from '../assets/p1.png'
   import pic2 from '../assets/p2.png'
   import pic3 from '../assets/p3.png'
@@ -356,11 +362,17 @@
 
       }
     },
+    mounted () {  
+    this.huadong()  
+    }, 
     methods: {
      navMenu(index){
       this.activeName1=index;
       if(index==5){
         this.$router.push("/join") 
+      }
+      if(index==1){
+        this.$router.push("/product") 
       }
      },
      mouseon(index){
@@ -394,6 +406,17 @@
      mouseOutt(index){
        this.activePic4[index].show=true;
        this.activeName2=null
+     },
+     huadong(){
+      let swiperContainer = new Swiper('.swiper-container', {
+          pagination: '.swiper-pagination',
+          nextButton: '.rightPic',
+          prevButton: '.leftPic',
+          slidesPerView: 1,
+          paginationClickable: true,
+          spaceBetween: 30,
+          loop: true
+      });
      }
     }
   }
@@ -402,4 +425,11 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped media="all" type="text/css">
 @import url("../css/index.css") screen;
+@import url("../css/swiper.min.css");
+    .swiper-container {
+        width: 65%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
 </style>
