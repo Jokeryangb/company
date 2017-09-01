@@ -12,26 +12,34 @@
       <img src="../assets/Innerbanner.png" style="width:100%;height:auto;" class="JobsBanner">
       <div class="Job">
          <div class="FirstTitle">
-            <p>Java高级开发工程师<img src="../assets/ho-t.png" class="hotPic">
+            <p>商务代表<img src="../assets/ho-t.png" class="hotPic">
             <img :src="button1" class="backPic" @mouseover="mouseOn" @mouseout="mouseOut" @click="onclick"></p>
          </div>
          <div class="p1" style="top: 122px;">
             <h4>职位描述</h4>
-            <p>1、独立完成中小型项目的系统分析、设计，并主导完成详细设计和编码的任务，确保项目的进度和质量;<br>
-                2、参与建设通用、灵活的业务基础平台，支撑上层多场景的业务;<br>
-                3、执行代码检查并提供优化建议，对部分人员进行JAVA技术、开发技能等知识普及及能力培养;<br>
-                4、改善、维护和优化相关的产品的质量、性能、提升用户使用体验。</p>
+            <p>1、销售酷酷宝系统。<br>
+
+              2、收集市场信息。<br>
+
+              3、跟进维护客户。<br>
+
+              4、完成公司要求的销售指标。</p>
          </div>
          <div class="p1 p2">
             <h4>任职要求：</h4>
-            <p>1、5年以上应用系统设计及开发经验；<br>
-                2、精通负载均衡机制、应用集群搭建、数据库集群搭建；<br>
-                3、精通J2EE技术平台及主流框架，具有Hibernate、Spring、Struts、mybatis等框架开发经验，深刻理解SpringMVC；<br>
-                4、精通Web页面开发，熟练运用HTML、JavaScript、ajax、css、JQuery;<br>
-                5、精通Tomcat等主流J2EE应用服务,能在Unix/Linux上布署服务;<br>
-                6、精通MySQL等数据库，熟悉关系数据库应用设计开发及优化;<br>
-                7、有基于阿里云平台的研发经验优先考虑；<br>
-                8、有大数据或高并发数据库开发经验优先考虑。</p>
+            <p>1、1-3年的销售工作经验。<br>
+
+                2、大专以上学历。<br>
+
+                3、市场营销、电子商务专业优先。<br>
+
+                4、有较强的沟通能力。<br>
+
+                5、团队协作精神，吃苦耐劳精神。<br>
+
+                6、爱干销售工作。<br>
+
+                7、正直勇敢</p>
          </div>
          <div class="p1 p3">
             <h4>薪酬福利：</h4>
@@ -44,7 +52,7 @@
          </div>
           <div class="p1 p4">
             <h4>工作地址：</h4>
-            <p>广州 - 天河区 - 体育东路122号羊城国际商贸中心东塔3209单元&nbsp&nbsp&nbsp<span style="color: #0099cc;  font-family: FZLTXHK-GBK1-0;
+            <p>广州 - 番禺区 - 番禺区迎星东路143号星力动漫产业园J128号&nbsp&nbsp&nbsp<span style="color: #0099cc;  font-family: FZLTXHK-GBK1-0;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.8px;">查看地图 ></span></p>

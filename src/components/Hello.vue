@@ -76,11 +76,21 @@
       </div>
     </div>
     <div class="methods">
-      <img src="../assets/title4.png" class="title4">
+       <div style="width: 100%;height: 50px;position: relative;">
+          <h4 class="titleC" style="color: #ffffff">如何突破</h4>
+          <p class="titleEnglish" style=" color: #cccccc;">How to Break Through</p>
+          <div class="blueLine" style="z-index: 3"></div>
+          <div class="greyLine" style="background-color: #f0f0f0;top: 14px;z-index: 1"></div>
+      </div>
       <img src="../assets/p12.png" class="p12">
     </div>
     <div class="service">
-      <img src="../assets/title5.png" class="title5">
+      <div style="width: 100%;height: 50px;position: relative;top: 48px;margin-bottom: 90px;">
+          <h4 class="titleC" style="width: 170px; ">我们的产品与服务</h4>
+          <p class="titleEnglish" style="width: 170px">Our Products And Services</p>
+          <div class="blueLine"></div>
+          <div class="greyLine"></div>
+      </div>
       <el-row :gutter="20" type="flex" class="row-bg" justify="center" style="margin-right: 0;margin-left: 0;padding-bottom: 5.9rem">
         <el-col :span="3" v-for="(bottleneck,index) in service" @mouseover.native="mouseOnn(index)" @mouseout.native="mouseOutt(index)"  style="width: 12.8rem;height:206px;background-color: #fff;padding:0;margin-left:10px;margin-right: 10px" v-bind:class="{moveChange: activeName2 == index+8}">
           <div :body-style="{ padding: '0px' }" style="width: 12.8rem;height:206px;" v-bind:class="{colorChange: activeName2 == index+8}">
@@ -94,44 +104,56 @@
       </el-row>
     </div>
     <div class="cooperationExa">
-      <img src="../assets/title6.png" class="title6">
+       <div style="width: 100%;height: 50px;position: relative;margin-bottom: 48px ">
+          <h4 class="titleC" style="color: #ffffff">合作案例</h4>
+          <p class="titleEnglish" style=" color: #cccccc;width:250px;">Successful Examples Of Cooperation</p>
+          <div class="blueLine" style="z-index: 3"></div>
+          <div class="greyLine" style="background-color: #f0f0f0;top: 14px;z-index: 1"></div>
+      </div>
       <div class="swiper-container">
-        <img src="../assets/left.png" class="leftPic">
+        <div class="swiper-button-prev" style="background:none"><img src="../assets/left.png" class="leftPic"></div>
         <div class="bannerPicture swiper-wrapper">
           <div class="swiper-slide">
           <img src="../assets/p23.jpg" style="width: 100%;height: auto;">
           <div class="grey"><p>1、客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包，只要带上手机即可客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包，只要带上手机即可客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包，只要带上手机即可客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包</p><img src="../assets/button3.png"></div>
           </div>
         </div>
-        <img src="../assets/right.png" class="rightPic">
+        <div class="swiper-button-next" style="background:none"><img src="../assets/right.png" class="rightPic"></div>
       </div>
     </div>
     <div class="MerchantAlliance">
-      <img src="../assets/title7.png" class="title7">
+      <div style="width: 100%;height: 50px;position: relative;top: 48px;margin-bottom:87px ">
+          <h4 class="titleC">商家联盟</h4>
+          <p class="titleEnglish">Merchant Alliance</p>
+          <div class="blueLine"></div>
+          <div class="greyLine"></div>
+      </div>
        <el-row :gutter="20" type="flex" class="row-bg" justify="center" style="margin-right: 0;margin-left: 0;height: 80px;margin: 0;padding:0">
-        <el-col :span="6" style="width: 222px;height: 80px;">
+        <el-col :span="6" style="width: 222px;height: 80px;box-sizing: content-box;padding-left: 0 ">
             <img src="../assets/27.png">
         </el-col>
-        <el-col :span="8" style="width: 307px;height: 80px;">
+        <el-col :span="8" style="width: 307px;height: 80px;box-sizing: content-box;padding-left: 0">
             <img src="../assets/p24.png">
         </el-col>
-        <el-col :span="6" style="width: 222px;height: 80px;">
+        <el-col :span="6" style="width: 222px;height: 80px;box-sizing: content-box;padding-left: 0">
             <img src="../assets/26.png">
         </el-col>
       </el-row>
-       <el-row :gutter="20" type="flex" class="row-bg" justify="center" style="    margin-left: 0px;margin-right: 0px;margin-top: 8px;padding-bottom: 77px;">
-        <el-col :span="6">
-            <img src="../assets/25.png" style="width: 224px;height: 80px;">
+       <el-row :gutter="20" type="flex" class="row-bg" justify="center" style="margin-left: 0px;margin-right: 0px;margin-top: 8px;padding-bottom: 77px;">
+        <el-col :span="6" style="width: 222px;height: 80px;box-sizing: content-box;padding-left: 0">
+            <img src="../assets/25.png">
         </el-col>
-
-        <el-col :span="6">
-            <img src="../assets/28.png" style="width: 220px;height: 80px;">
+        <el-col :span="8" style="width: 307px;height: 80px;box-sizing: content-box;padding-left: 0">
+            <img src="../assets/tencent.png">
+        </el-col>
+        <el-col :span="6" style="width: 222px;height: 80px;box-sizing: content-box;padding-left: 0">
+            <img src="../assets/28.png">
         </el-col>
       </el-row>
       </div>
     <div class="pagebottom">
       <div style="width:832px;height:auto;margin:0 auto;position:relative;">
-       <img src="../assets/m.png" class="bussinessLogo" style="width: 10rem;height: auto;float: left;">
+       <img src="../assets/logo2.png" class="bussinessLogo" style="float: left;">
        <div style="width: 520px;height: auto;float: left;position: absolute;left:196px;margin-top: 36px">
        <div style="width: 325px;height: 13px ;font-family: FZLTXHK-GBK1-0;font-size: 12px;line-height: 1.5;letter-spacing: 0.3px;text-align: left;color: #ffffff">首页&nbsp&nbsp|&nbsp&nbsp产品&nbsp&nbsp|&nbsp&nbsp案例&nbsp&nbsp|&nbsp&nbsp商务方式&nbsp&nbsp|&nbsp&nbsp关于我们&nbsp&nbsp|&nbsp&nbsp加入我们</div>
        <p style="width: 514px;height: 49px;  width: 514px;height: 49px;font-family: FZLTXHK-GBK1-0;font-size: 12px;line-height: 1.5;letter-spacing: 0.3px;text-align: left;color: #ababab;margin-top: 10px">广州好酷科技有限公司&nbsp&nbsp联系电话：020-39106900&nbsp&nbsp联系地址：广州番禺区番禺大道北555号番禺节能科技园创新大厦618&nbsp&nbsp展厅地址：广州番禺迎新东路星力动漫游戏产业园J128&nbsp&nbsp版权所有：Copyright@好酷科技&nbsp&nbsp粤ICP备16091001号-1
@@ -213,7 +235,7 @@ import Swiper from '../js/swiper.min.js';
           },
           {
             id: 3,
-            title: '商务方式'
+            title: '商务合作'
           },
           {
             id: 4,
@@ -236,24 +258,24 @@ import Swiper from '../js/swiper.min.js';
             pic: pic2,
             picc:picc2,
             No: '02',
-            title: '支付麻烦，受到会员卡限制怎么办？',
-            content: '客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包，只要带上手机即可'
+            title: '积分没用，不便储存，不便消费？',
+            content: '玩游戏得的奖励积分（彩票）不再是鸡肋，可储在手机会员卡上，在积分商城兑换多彩多样的精美礼品，还有流量话费、旅游、数码、虚拟商品等。还可以在联盟商家兑换消费，用餐、购物、看电影等。'
           },
           {
             id: 2,
             pic: pic3,
             picc:picc3,
             No: '03',
-            title: '支付麻烦，受到会员卡限制怎么办？',
-            content: '客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包，只要带上手机即可'
+            title: '不能互动，不能分享炫耀？',
+            content: '玩家不再孤单、不再没有社交空间，抓到娃娃或者挑战的记录，可以和其他玩家在社区论坛分享，找到同道中人。还可以投票支持、签到领奖。'
           },
           {
             id: 3,
             pic: pic4,
             picc:picc4,
             No: '04',
-            title: '支付麻烦，受到会员卡限制怎么办？',
-            content: '客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包，只要带上手机即可'
+            title: '场地限制，碎片化时间无法打发？',
+            content: '随时随地想玩就玩，玩家还可以玩手游，看小说，直播等等。'
           },
         ],
         playerNeck1: [{
@@ -262,14 +284,14 @@ import Swiper from '../js/swiper.min.js';
             picc: picc5,
             No: '01',
             title: '礼品库存压力大？',
-            content: '客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包，只要带上手机即可'
+            content: '建立积分商城，礼品的采购、库存、与兑换管理，全在线上及后台完成。'
           }, {
             id: 1,
             pic: pic6,
             picc: picc6,
             No: '02',
             title: '管理系统采购成本高？',
-            content: '客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包，只要带上手机即可'
+            content: '革命性降低了投入，运营维护成本，特别是连锁经营、一套多店。'
           },
           {
             id: 2,
@@ -277,7 +299,7 @@ import Swiper from '../js/swiper.min.js';
             picc: picc7,
             No: '03',
             title: '赚钱盈利模式单一？',
-            content: '客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包，只要带上手机即可'
+            content: '不再是只依赖游艺厅线下赚钱，用粉丝赚钱，把粉丝导流到公众平台可实现生态赢利不用冒法律风险干“擦边球”。'
           },
           {
             id: 3,
@@ -285,7 +307,7 @@ import Swiper from '../js/swiper.min.js';
             picc: picc8,
             No: '04',
             title: '外部资源匮乏？',
-            content: '客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包，只要带上手机即可'
+            content: '承接线上海量客户，打通线上线下游戏通道。'
           },
         ],
         playerNeck2: [{
@@ -294,7 +316,7 @@ import Swiper from '../js/swiper.min.js';
             picc: picc9,
             No: '05',
             title: '营销功能薄弱？',
-            content: '客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包，只要带上手机即可',
+            content: '拥有八大营销功能，包括分享送币、投票、签到、三级分销等等。',
             opacity: 1
           }, {
             id: 1,
@@ -302,7 +324,7 @@ import Swiper from '../js/swiper.min.js';
             picc: picc10,
             No: '06',
             title: '管理漏洞难杜绝？',
-            content: '客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包，只要带上手机即可',
+            content: '支付可全部线上支付，游戏币、积分、机台投币数据等所有数据全部统计并实时查询。',
             opacity: 1
           },
           {
@@ -311,7 +333,7 @@ import Swiper from '../js/swiper.min.js';
             picc: picc11,
             No: '07',
             title: '数据分析弱？',
-            content: '客人无需在考虑没带会员卡能否去游乐园游乐厅玩，甚至不需要带钱包，只要带上手机即可',
+            content: '拥有强大的数据分析报表，数据归纳整理，门店排行，统一视图等。',
             opacity: 1
           }, {
             id: 2,
@@ -374,6 +396,18 @@ import Swiper from '../js/swiper.min.js';
       if(index==1){
         this.$router.push("/product") 
       }
+      if(index==2){
+        this.$router.push("/example") 
+      }
+      if(index==3){
+        this.$router.push("/methods") 
+      }
+      if(index==4){
+        this.$router.push("/about") 
+      }
+      if(index==0){
+        this.$router.push("/") 
+      }
      },
      mouseon(index){
       this.activePic[index].show=false;
@@ -410,8 +444,8 @@ import Swiper from '../js/swiper.min.js';
      huadong(){
       let swiperContainer = new Swiper('.swiper-container', {
           pagination: '.swiper-pagination',
-          nextButton: '.rightPic',
-          prevButton: '.leftPic',
+          nextButton: '.swiper-button-next',
+          prevButton: '.swiper-button-prev',
           slidesPerView: 1,
           paginationClickable: true,
           spaceBetween: 30,

@@ -10,7 +10,7 @@
    </div>
     <div class="Joinbanner">
        <div class="MethodsBanner"><img src="../assets/examplee.png" class="MethodsPic">
-       <!-- <img src="../assets/exampleWord.png" class="exampleWordPic"> -->
+       <img src="../assets/exampleWord.png" class="exampleWordPic">
        </div>
        <div style="width: 100%;height: 50px;position: relative;margin-top:34px ">
           <h4 class="titleC">最新案例</h4>
@@ -84,7 +84,7 @@
 </div>
     <div class="pagebottom">
       <div style="width:832px;height:auto;margin:0 auto;position:relative;">
-       <img src="../assets/m.png" class="bussinessLogo" style="width: 10rem;height: auto;float: left;">
+       <img src="../assets/logo2.png" class="bussinessLogo" style="float: left;">
        <div style="width: 520px;height: auto;float: left;position: absolute;left:196px;margin-top: 36px">
        <div style="width: 325px;height: 13px ;font-family: FZLTXHK-GBK1-0;font-size: 12px;line-height: 1.5;letter-spacing: 0.3px;text-align: left;color: #ffffff">首页&nbsp&nbsp|&nbsp&nbsp产品&nbsp&nbsp|&nbsp&nbsp案例&nbsp&nbsp|&nbsp&nbsp商务方式&nbsp&nbsp|&nbsp&nbsp关于我们&nbsp&nbsp|&nbsp&nbsp加入我们</div>
        <p style="width: 514px;height: 49px;  width: 514px;height: 49px;font-family: FZLTXHK-GBK1-0;font-size: 12px;line-height: 1.5;letter-spacing: 0.3px;text-align: left;color: #ababab;margin-top: 10px">广州好酷科技有限公司&nbsp&nbsp联系电话：020-39106900&nbsp&nbsp联系地址：广州番禺区番禺大道北555号番禺节能科技园创新大厦618&nbsp&nbsp展厅地址：广州番禺迎新东路星力动漫游戏产业园J128&nbsp&nbsp版权所有：Copyright@好酷科技&nbsp&nbsp粤ICP备16091001号-1
@@ -138,7 +138,7 @@ import button6 from "../assets/handleclick.png"
           },
           {
             id: 3,
-            title: '商务方式'
+            title: '商务合作'
           },
           {
             id: 4,
@@ -154,9 +154,29 @@ import button6 from "../assets/handleclick.png"
     mounted () {  
     this.huadong()  
     }, 
+    created(){
+      this.activeName1=2;
+    },
     methods: {
      navMenu(index){
-      this.activeName1=index;
+      if(index==5){
+        this.$router.push("/join") 
+      }
+      if(index==1){
+        this.$router.push("/product") 
+      }
+      if(index==2){
+        this.$router.push("/example") 
+      }
+      if(index==3){
+        this.$router.push("/methods") 
+      }
+      if(index==4){
+        this.$router.push("/about") 
+      }
+      if(index==0){
+        this.$router.push("/") 
+      }
      },
      mouseOn(){
        this.button1 = button2;
@@ -206,6 +226,38 @@ import button6 from "../assets/handleclick.png"
 @import url("../css/swiper.min.css");
 @import url("../css/index.css") screen;
 @import url("../css/Job.css") screen;
+@media (min-width: 1900px) {
+.exampleWordPic{
+    position: absolute;
+    display: inline;
+    top: 15%;
+    left: 40%;
+}
+}
+@media (min-width: 1300px) and (max-width: 1900px) {
+.exampleWordPic{
+   left: 35%;
+    position: absolute;
+    display: inline;
+    top: 15%;
+}
+}
+@media (min-width: 1000px) and (max-width: 1300px) {
+.exampleWordPic{
+   left: 30%;
+    position: absolute;
+    display: inline;
+    top:0 
+}
+}
+@media (max-width: 1000px) {
+.exampleWordPic{
+   left: 25%;
+    position: absolute;
+    display: inline;
+    top: 0
+}
+}
 .MethodsBanner{
   width: 100%;
   position: relative;
@@ -253,12 +305,7 @@ import button6 from "../assets/handleclick.png"
   right:0;
   display: inline;
 }
-.exampleWordPic{
-  position: absolute;
-  width: 465px;
-  height: auto;
-  margin: 96px auto 68px;
-}
+
 .example1Word h4{
   width: 190px;
   height: 14px;

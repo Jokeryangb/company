@@ -9,9 +9,9 @@
     </ul>
    </div>
     <div class="Joinbanner">
-      <img src="../assets/product.png" style="width:100%;height:100%;">
+      <div class="MethodsBanner"><img src="../assets/product.png" class="MethodsPic"></div>
     </div>
-      <div class="Job">
+      <div class="Job" style="top: 0">
          <div class="payy"><img src="../assets/pay.png" class="payPic"><div class="payContent"><span>聚合支付</span><p>微信支付、支付宝支付、QQ钱包刷卡支付等全面支持</p></div></div>
          <div class="selll"><img src="../assets/sell.png" class="sellPic"><div class="sellContent"><span>自动营销</span><p>七种武器:<br><br>1.吸星大法。凡关注游艺厅公众号皆可设置赠送游戏币，吸粉速度超级快<br><br>
 2.移花接木。玩家转发推荐朋友关注公众号，可以获得游戏币奖励或者积分奖励<br><br>
@@ -34,7 +34,7 @@
       </div>
     <div class="pagebottom">
       <div style="width:832px;height:auto;margin:0 auto;position:relative;">
-       <img src="../assets/m.png" class="bussinessLogo" style="width: 10rem;height: auto;float: left;">
+       <img src="../assets/logo2.png" class="bussinessLogo" style="float: left;">
        <div style="width: 520px;height: auto;float: left;position: absolute;left:196px;margin-top: 36px">
        <div style="width: 325px;height: 13px ;font-family: FZLTXHK-GBK1-0;font-size: 12px;line-height: 1.5;letter-spacing: 0.3px;text-align: left;color: #ffffff">首页&nbsp&nbsp|&nbsp&nbsp产品&nbsp&nbsp|&nbsp&nbsp案例&nbsp&nbsp|&nbsp&nbsp商务方式&nbsp&nbsp|&nbsp&nbsp关于我们&nbsp&nbsp|&nbsp&nbsp加入我们</div>
        <p style="width: 514px;height: 49px;  width: 514px;height: 49px;font-family: FZLTXHK-GBK1-0;font-size: 12px;line-height: 1.5;letter-spacing: 0.3px;text-align: left;color: #ababab;margin-top: 10px">广州好酷科技有限公司&nbsp&nbsp联系电话：020-39106900&nbsp&nbsp联系地址：广州番禺区番禺大道北555号番禺节能科技园创新大厦618&nbsp&nbsp展厅地址：广州番禺迎新东路星力动漫游戏产业园J128&nbsp&nbsp版权所有：Copyright@好酷科技&nbsp&nbsp粤ICP备16091001号-1
@@ -83,7 +83,7 @@ import button6 from "../assets/handleclick.png"
           },
           {
             id: 3,
-            title: '商务方式'
+            title: '商务合作'
           },
           {
             id: 4,
@@ -96,14 +96,28 @@ import button6 from "../assets/handleclick.png"
         ],
       }
     },
+    created(){
+      this.activeName1=1;
+    },
     methods: {
      navMenu(index){
-      this.activeName1=index;
       if(index==5){
         this.$router.push("/join") 
       }
       if(index==1){
         this.$router.push("/product") 
+      }
+      if(index==2){
+        this.$router.push("/example") 
+      }
+      if(index==3){
+        this.$router.push("/methods") 
+      }
+      if(index==4){
+        this.$router.push("/about") 
+      }
+      if(index==0){
+        this.$router.push("/") 
       }
      },
      mouseOn(){
@@ -137,6 +151,14 @@ import button6 from "../assets/handleclick.png"
     height: auto;
     clear: both;
     background-color:  #f9f9f9
+}
+.MethodsBanner{
+  width: 100%;
+  position: relative;
+}
+.MethodsPic{
+  width: 100%;
+  height: auto;
 }
 .Job{
   position: relative;

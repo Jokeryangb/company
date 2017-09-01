@@ -87,7 +87,11 @@
   top:-15rem;
 }
 }  
-
+@media (min-width: 1300px){
+.Job{
+  top:-20rem;
+}
+}
 @media (min-width: 1300px) {
 .FirstTitle p{
 position: absolute;
@@ -104,9 +108,16 @@ position: absolute;
     left: 15.5%;
     top: 52px;
 }
-.Job{
-    top: -30rem;
 }
+@media  (min-width: 1600px){
+    .Job{
+        top: -300px;
+    }
+}
+@media  (min-width: 2000px){
+    .Job{
+        top: -400px;
+    }
 }
  .Joinbanner{
     position: relative;
@@ -120,7 +131,7 @@ position: absolute;
   width:90%;
   height: 1297px;
   background-color: #ffffff;
-  z-index: 10000;
+  z-index: 10;
   margin: 0 auto;
 }
 .FirstTitle {

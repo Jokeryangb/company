@@ -17,21 +17,35 @@
          </div>
          <div class="p1" style="top: 122px;">
             <h4>职位描述</h4>
-            <p>1、独立完成中小型项目的系统分析、设计，并主导完成详细设计和编码的任务，确保项目的进度和质量;<br>
-                2、参与建设通用、灵活的业务基础平台，支撑上层多场景的业务;<br>
-                3、执行代码检查并提供优化建议，对部分人员进行JAVA技术、开发技能等知识普及及能力培养;<br>
-                4、改善、维护和优化相关的产品的质量、性能、提升用户使用体验。</p>
+            <p>1、在项目/产品经理带领下完成开发任务。<br>
+
+                2、参与项目部分需求分析和设计工作。</br>
+
+                3、根据设计规格书，按质、按量、按时的完成代码开发任务。<br>
+
+                4、根据项目需要，撰写及修改相应的文档。<br>
+
+                5、按照编码规范编程，并编制贯穿整个软件开发周期的文档资料。</p>
          </div>
          <div class="p1 p2">
             <h4>任职要求：</h4>
-            <p>1、5年以上应用系统设计及开发经验；<br>
-                2、精通负载均衡机制、应用集群搭建、数据库集群搭建；<br>
-                3、精通J2EE技术平台及主流框架，具有Hibernate、Spring、Struts、mybatis等框架开发经验，深刻理解SpringMVC；<br>
-                4、精通Web页面开发，熟练运用HTML、JavaScript、ajax、css、JQuery;<br>
-                5、精通Tomcat等主流J2EE应用服务,能在Unix/Linux上布署服务;<br>
-                6、精通MySQL等数据库，熟悉关系数据库应用设计开发及优化;<br>
-                7、有基于阿里云平台的研发经验优先考虑；<br>
-                8、有大数据或高并发数据库开发经验优先考虑。</p>
+            <p>1. Java基础扎实，两年以上的Java EE项目开发经验；<br>
+
+              2. 熟悉Spring、Mybatis、Hibernate等开源框架，两年以上实际项目开发经验。<br>
+
+              3. 熟悉MySQL等数据库应用开发；<br>
+
+              4. 熟悉memcached、redis等cache技术；<br>
+
+              5. 有丰富的主流开源框架的使用经验，并深入研究过一种以上；<br>
+
+              6. 对当前广泛使用的tomcat、nginx等HTTP Server及Application Server有较丰富的应用经验；<br>
+
+              7. 熟悉运用Javascript开发，使用过主流JS ajax框架如JQUERY等；<br>
+
+              8. 了解软件设计、开发过程，开发规范以及软件质量控制；<br>
+
+              9. 性格开朗，沟通协调能力强，具有团队合作精神；</p>
          </div>
          <div class="p1 p3">
             <h4>薪酬福利：</h4>
@@ -171,4 +185,18 @@ import button6 from "../assets/handleclick.png"
 <style scoped media="all" type="text/css">
 @import url("../css/index.css") screen;
 @import url("../css/Job.css") screen;
+@media (min-width: 1490px){
+.p4 {
+    top: 980px;
+}
+}@media (min-width: 1490px){
+.p3 {
+    top: 710px;
+}
+}
+@media (min-width: 1490px){
+.p2 {
+    top: 360px;
+}
+}
 </style>

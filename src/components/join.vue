@@ -9,9 +9,15 @@
     </ul>
    </div>
     <div class="Joinbanner">
+        <div class="MethodsBanner"><img src="../assets/Joinbanner.png" class="MethodsPic"></div>
     </div>
-    <div class="Job">
-       <img src="../assets/title8.png" class="title8">
+    <div class="Job" style="top: 0">
+      <div style="width: 100%;height: 50px;position: relative;top: 48px;margin-bottom:87px ">
+          <h4 class="titleC">招聘职位</h4>
+          <p class="titleEnglish">Recruiting position</p>
+          <div class="blueLine"></div>
+          <div class="greyLine"></div>
+      </div>
        <div class="example">
         <el-row :gutter="20" type="flex" class="row-bg" justify="center" style="margin-right: 0;margin-left: 0;margin-top:45px;padding-bottom: 57px ">
           <el-col :span="3" v-for="(bottleneck,index) in bottleNeck" style="width: 146px;height: 171px">
@@ -28,10 +34,10 @@
         </el-row>
       </div>
       <div class="searchContent">
-        <input autocomplete="off" placeholder="请输入内容" type="text" rows="2" validateevent="true" class="el-input__inner" style="border: 1px solid #fff;width: 268px;height: 40px;border-radius: 0;position: absolute;left: 13px;top: 21px;" v-model="searchContent">
+        <input autocomplete="off" placeholder="请输入您要搜索的岗位关键词" type="text" rows="2" validateevent="true" class="el-input__inner" style="border: 1px solid #fff;width: 268px;height: 40px;border-radius: 0;position: absolute;left: 13px;top: 21px;" v-model="searchContent">
         <img src="../assets/searchButton.png" class="searchImg" @click="search">
         <img src="../assets/ho-t.png" class="searchHot">
-        <p class="hotContent">热招岗位：Java高级工程师&nbsp&nbsp商务经理&nbsp&nbsp运维员</p>
+        <p class="hotContent"><span style="font-size: 14px;display: inline-block;margin-right: 10px;">热招岗位：</span><span class="JobsName">Java高级工程师</span>&nbsp&nbsp<span class="JobsName">商务经理</span>&nbsp&nbsp<span class="JobsName">运维员</span></p>
       </div>
       <div class="searchContent2">
         <h4 class="Jobtitle">急招职位</h4>
@@ -45,7 +51,7 @@
     </div>
     <div class="pagebottom">
       <div style="width:832px;height:auto;margin:0 auto;position:relative;">
-       <img src="../assets/m.png" class="bussinessLogo" style="width: 10rem;height: auto;float: left;">
+       <img src="../assets/logo2.png" class="bussinessLogo" style="float: left;">
        <div style="width: 520px;height: auto;float: left;position: absolute;left:196px;margin-top: 36px">
        <div style="width: 325px;height: 13px ;font-family: FZLTXHK-GBK1-0;font-size: 12px;line-height: 1.5;letter-spacing: 0.3px;text-align: left;color: #ffffff">首页&nbsp&nbsp|&nbsp&nbsp产品&nbsp&nbsp|&nbsp&nbsp案例&nbsp&nbsp|&nbsp&nbsp商务方式&nbsp&nbsp|&nbsp&nbsp关于我们&nbsp&nbsp|&nbsp&nbsp加入我们</div>
        <p style="width: 514px;height: 49px;  width: 514px;height: 49px;font-family: FZLTXHK-GBK1-0;font-size: 12px;line-height: 1.5;letter-spacing: 0.3px;text-align: left;color: #ababab;margin-top: 10px">广州好酷科技有限公司&nbsp&nbsp联系电话：020-39106900&nbsp&nbsp联系地址：广州番禺区番禺大道北555号番禺节能科技园创新大厦618&nbsp&nbsp展厅地址：广州番禺迎新东路星力动漫游戏产业园J128&nbsp&nbsp版权所有：Copyright@好酷科技&nbsp&nbsp粤ICP备16091001号-1
@@ -90,7 +96,7 @@ import button3 from "../assets/Moreclick.png"
           },
           {
             id: 3,
-            title: '商务方式'
+            title: '商务合作'
           },
           {
             id: 4,
@@ -158,15 +164,27 @@ import button3 from "../assets/Moreclick.png"
     },
     created(){
         this.fuzhi();
+        this.activeName1=5;
     },
     methods: {
      navMenu(index){
-      this.activeName1=index;
       if(index==5){
         this.$router.push("/join") 
       }
       if(index==1){
         this.$router.push("/product") 
+      }
+      if(index==2){
+        this.$router.push("/example") 
+      }
+      if(index==3){
+        this.$router.push("/methods") 
+      }
+      if(index==4){
+        this.$router.push("/about") 
+      }
+      if(index==0){
+        this.$router.push("/") 
       }
      },
      mouseOn:function(index){
@@ -177,6 +195,17 @@ import button3 from "../assets/Moreclick.png"
      },
      onclick(index){
        this.Jobs[index].button = button3;
+       if(this.Jobs[index].name=='Java高级开发工程师'){
+            this.$router.push({path: '/JobsDetails'})
+       }if(this.Jobs[index].name=='Java中级开发工程师'){
+            this.$router.push({path: '/JavaEngineer'})
+       }if(this.Jobs[index].name=='运维员'){
+            this.$router.push({path: '/operations'})
+       }if(this.Jobs[index].name=='商务助理'){
+            this.$router.push({path: '/sales'})
+       }if(this.Jobs[index].name=='商务经理'){
+            this.$router.push({path: '/Business'})
+       }
      },
      fuzhi(){
        this.Jobbb = this.Jobs;
@@ -206,21 +235,18 @@ import button3 from "../assets/Moreclick.png"
     position: relative;
     width: 100%;
     height: auto;
-    background-image: url('../assets/Joinbanner.png');
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    /* Firefox */
-    -webkit-box-sizing: border-box;
-    /* Safari */
-    padding-top: 10%;
-    clear: both;
+}
+.MethodsBanner{
+  width: 100%;
+  position: relative;
+}
+.MethodsPic{
+  width: 100%;
+  height: auto;
 }
 .Job{
     position: relative;
     width: 100%;
-    padding-top: 3.6rem;
     height: auto;
 }
 .InternPosition{
@@ -230,20 +256,20 @@ import button3 from "../assets/Moreclick.png"
   position: relative;
 }
 .Jobtitle{
-  width: 100px;
+  width: 90px;
   height: 19px;
   font-family: FZZZHONGJW-GB1-0;
   font-size: 20px;
-  line-height: 3.6;
+  line-height:19px;
   letter-spacing: 1px;
   color: #000000;
-  margin-left: 19px;
+  margin-left: 15px;
+  margin-top:37px 
 }
 .searchContent2 ul{
   width:  856px;
   height:auto;
   position: relative;
-  margin-top: 30px;
   margin-bottom:54px; 
 }
 .searchContent2 ul li{
@@ -312,13 +338,13 @@ import button3 from "../assets/Moreclick.png"
   height:14px;
   font-family: FZLTHK-GBK1-0;
   font-size: 14px;
-  line-height: 5.14;
+  line-height: 14px;
   letter-spacing: 0.7px;
   text-align: left;
   color: #333333;
   position: absolute;
-  left: 481px;
-  top:5px;
+    right: 23px;
+    top: 35px;
 }
 .JobName{
     width: 200px;
@@ -339,6 +365,12 @@ import button3 from "../assets/Moreclick.png"
   position:absolute;
   left: 724px;
   top: 7px;
+}
+.JobsName{
+      display: inline;
+    border-bottom: 1px solid #999999;
+    padding-bottom: 2px;
+    font-size: 14px;
 }
 
 </style>

@@ -12,26 +12,21 @@
       <img src="../assets/Innerbanner.png" style="width:100%;height:auto;" class="JobsBanner">
       <div class="Job">
          <div class="FirstTitle">
-            <p>Java高级开发工程师<img src="../assets/ho-t.png" class="hotPic">
+            <p>运维员<img src="../assets/ho-t.png" class="hotPic">
             <img :src="button1" class="backPic" @mouseover="mouseOn" @mouseout="mouseOut" @click="onclick"></p>
          </div>
          <div class="p1" style="top: 122px;">
             <h4>职位描述</h4>
-            <p>1、独立完成中小型项目的系统分析、设计，并主导完成详细设计和编码的任务，确保项目的进度和质量;<br>
-                2、参与建设通用、灵活的业务基础平台，支撑上层多场景的业务;<br>
-                3、执行代码检查并提供优化建议，对部分人员进行JAVA技术、开发技能等知识普及及能力培养;<br>
-                4、改善、维护和优化相关的产品的质量、性能、提升用户使用体验。</p>
+            <p>1、受理及主动电话客户，能够及时发现客户问题并给到正确和满意的回复；<br>
+
+                2、与客户建立良好的联系，熟悉及挖掘客户需求，并对客户进行系统的应用培训；<br>
+
+                3、具备处理问题、安排进展、跟进进程、沟通及疑难问题服务的意识跟能力，最大限度的提高客户满意度，遇到不能解决的问题按流程提交相关人员或主管处理，并跟踪进展直至解决；</p>
          </div>
          <div class="p1 p2">
             <h4>任职要求：</h4>
-            <p>1、5年以上应用系统设计及开发经验；<br>
-                2、精通负载均衡机制、应用集群搭建、数据库集群搭建；<br>
-                3、精通J2EE技术平台及主流框架，具有Hibernate、Spring、Struts、mybatis等框架开发经验，深刻理解SpringMVC；<br>
-                4、精通Web页面开发，熟练运用HTML、JavaScript、ajax、css、JQuery;<br>
-                5、精通Tomcat等主流J2EE应用服务,能在Unix/Linux上布署服务;<br>
-                6、精通MySQL等数据库，熟悉关系数据库应用设计开发及优化;<br>
-                7、有基于阿里云平台的研发经验优先考虑；<br>
-                8、有大数据或高并发数据库开发经验优先考虑。</p>
+            <p>1、具备计算机，网络布线经验，<br>
+                2、线下活动策划经验。</p>
          </div>
          <div class="p1 p3">
             <h4>薪酬福利：</h4>
@@ -44,7 +39,7 @@
          </div>
           <div class="p1 p4">
             <h4>工作地址：</h4>
-            <p>广州 - 天河区 - 体育东路122号羊城国际商贸中心东塔3209单元&nbsp&nbsp&nbsp<span style="color: #0099cc;  font-family: FZLTXHK-GBK1-0;
+            <p>广州 - 番禺区 - 广州番禺区番禺区迎星东路143号星力动漫产业园J128号&nbsp&nbsp&nbsp<span style="color: #0099cc;  font-family: FZLTXHK-GBK1-0;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.8px;">查看地图 ></span></p>
@@ -171,4 +166,51 @@ import button6 from "../assets/handleclick.png"
 <style scoped media="all" type="text/css">
 @import url("../css/index.css") screen;
 @import url("../css/Job.css") screen;
+@media (min-width: 1490px){
+.p3 {
+    top: 490px;
+}
+}
+@media (min-width: 1490px){
+.p4 {
+    top: 770px;
+}
+}
+@media (min-width: 1260px){
+.p3 {
+    top: 490px;
+}
+}
+@media (min-width: 1260px){
+.p4 {
+    top: 770px;
+}
+}
+@media (min-width: 1150px){
+.p3 {
+    top: 520px;
+}
+}
+@media (min-width: 1150px){
+.p4 {
+    top: 830px;
+}
+}
+@media (max-width: 1150px){
+.p3 {
+    top: 540px;
+}
+}
+@media (max-width: 1150px){
+.p4 {
+    top: 880px;
+}
+}
+.handle {
+    width: 140px;
+    height: 40px;
+    position: absolute;
+    bottom: 220px;
+    left: 15.5%;
+}
 </style>

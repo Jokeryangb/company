@@ -362,6 +362,8 @@
     box-sizing: border-box;
     background-color: #333333;
     height: 157px;
+    position: relative;
+    z-index: 100
   }
   .grey {
     display: inline-block;
@@ -579,7 +581,12 @@
     float: left;
     margin-right: 8.5rem;
   }
-  
+  .bussinessLogo{
+    width: 161px;
+    height: auto;
+    position: relative;
+    top: 38px;
+  }
   .qqLogo {
     width: 8.9rem;
     height: 2.5rem;
@@ -632,7 +639,6 @@
   .leftPic{
     position: absolute;
     display: inline-block;
-    top: 45%;
     left: 10%;
     width: 2rem;
     height: auto;
@@ -649,7 +655,6 @@
         float: right;
     position: absolute;
     display: inline-block;
-    top: 45%;
     right: 10%;
     width: 2rem;
     height: auto;

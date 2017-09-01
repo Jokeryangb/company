@@ -7,6 +7,10 @@ import product from '@/components/product'
 import methods from '@/components/methods'
 import example from '@/components/example'
 import about from '@/components/about'
+import JavaEngineer from '@/components/JavaEngineer'
+import operations from '@/components/operations'
+import sales from '@/components/sales'
+import bussiness from '@/components/Bussiness'
 
 Vue.use(Router)
 
@@ -40,6 +44,22 @@ export default new Router({
     {
       path:'/about',
       component:about,
+    },
+    {
+      path:'/JavaEngineer',
+      component:JavaEngineer
+    },
+    {
+      path:'/operations',
+      component:operations
+    },
+    {
+      path:'/sales',
+      component:sales
+    },
+    {
+      path:'/Business',
+      component:bussiness
     },
     {
       path: '/index.html',
